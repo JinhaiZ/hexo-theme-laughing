@@ -3,7 +3,7 @@ favicon: /favicon.ico
 # SEO
 keywords: Computer Science, Technology Blog, Web Development, Ubuntu, Codility
 # Header
-page_background: /default_images/page_background.jpg
+page_background: page_background.png
 page_menu_button: dark
 post_background: /default_images/post_background.jpg
 post_menu_button: light
@@ -11,11 +11,6 @@ title_plancehold: 随笔
 author:
   head: /codingnote_logo.png # the codingnote
   signature: A place where we share our ideas about codings.
-navication:
-  - name: Codility
-    link: test
-  - name: Archives
-    link: test
 # content
 content_width: 800
 # Footer
