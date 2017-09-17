@@ -547,6 +547,11 @@ pre .xml .cdata {
   opacity: 0.5;
 }
 
+.article-comment {
+  padding: 0 36px;
+  margin: 0 auto 72px auto;
+}
+
 a {
   text-decoration: none;
   color: #34495e;
@@ -1088,72 +1093,6 @@ body {
 .article-meta li ul.category-list-child:before {
   content: '>';
   padding-right: .3em;
-}
-
-.article-comment {
-  padding: 0 36px;
-  margin: 0 auto 72px auto;
-}
-.article-comment #ds-thread #ds-reset .ds-meta {
-  border-bottom: 1px solid #bdc3c7;
-}
-.article-comment #ds-thread #ds-reset .ds-meta a.ds-like-thread-button {
-  border: 1px solid #bdc3c7;
-  color: #7f8c8d;
-  background: white;
-}
-.article-comment #ds-thread #ds-reset .ds-sort a {
-  color: #7f8c8d;
-  transition: color .3s;
-}
-.article-comment #ds-thread #ds-reset .ds-sort a:hover {
-  color: #2980b9;
-}
-.article-comment #ds-thread #ds-reset .ds-sort a.ds-current {
-  color: #2980b9;
-}
-.article-comment #ds-thread #ds-reset li.ds-tab a.ds-current {
-  border: 1px solid #bdc3c7;
-  background: white;
-  transition: color .3s;
-}
-.article-comment #ds-thread #ds-reset li.ds-tab a.ds-current:hover {
-  color: #2980b9;
-}
-.article-comment #ds-thread #ds-reset .ds-comments {
-  border-bottom: 1px solid #ecf0f1;
-  color: #2c3e50;
-}
-.article-comment #ds-thread #ds-reset li.ds-post {
-  border-top: 0;
-}
-.article-comment #ds-thread #ds-reset .ds-post-self {
-  border-top: 1px solid #ecf0f1;
-}
-.article-comment #ds-thread #ds-reset .ds-textarea-wrapper {
-  border: 1px solid #bdc3c7;
-  border-width: 1px 1px 0 1px;
-  background: white;
-}
-.article-comment #ds-thread #ds-reset .ds-textarea-wrapper textarea {
-  color: #34495e;
-}
-.article-comment #ds-thread #ds-reset .ds-post-toolbar {
-  box-shadow: none;
-}
-.article-comment #ds-thread #ds-reset .ds-post-options {
-  border: 1px solid #bdc3c7;
-  border-top-color: #ecf0f1;
-  border-right: none;
-}
-.article-comment #ds-thread #ds-reset .ds-gradient-bg {
-  background: white;
-}
-.article-comment #ds-thread #ds-reset .ds-post-button {
-  background: #ecf0f1;
-  border: 1px solid #bdc3c7;
-  border-top-color: #ecf0f1;
-  border-left-color: #ecf0f1;
 }
 
 .pagination {
