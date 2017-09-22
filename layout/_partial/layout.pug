@@ -16,8 +16,28 @@ html(lang="zh-cn")
       block content
       include ./footer.pug
     block script
+    script(src='https://ajax.googleapis.com/ajax/libs/jquery/2.1.1/jquery.min.js')
     script.
       var wrap = document.getElementById('wrap');
       window.onload = function () {
         wrap.className += ' done';
       }
+      // jQuery on fixed Header
+      $(document).ready(function(){
+      var showHeaderAt = 150;
+      var win = $(window),
+      body = $('body');
+      // Show the fixed header only on larger screen devices
+      if(win.width() > 400){
+      // When we scroll more than 150px down, we set the
+      // "fixed" class on the body element.
+      win.on('scroll', function(e){
+      if(win.scrollTop() > showHeaderAt) {
+      body.addClass('fixed');
+      }
+      else {
+      body.removeClass('fixed');
+      }
+      });
+      }
+      });
