@@ -1,7 +1,14 @@
-# Icon
-favicon: /favicon.ico
-# SEO
-keywords: Computer Science, Technology Blog, Web Development, Ubuntu, Codility
+# Content
+content_width: 800
+# Copyright
+copyright:
+  record: false
+  hexo: true
+  laughing: true
+# Disqus
+disqus:
+  enable: true
+  dsq_url: 'https://coding-note.disqus.com/embed.js'
 # Header
 page_background: page_background.png
 page_menu_button: dark
@@ -11,9 +18,10 @@ title_plancehold: 随笔
 author:
   head: /codingnote_logo.png # the codingnote
   signature: A place where we share our ideas about codings.
-# content
-content_width: 800
-# Footer
+# Icon
+favicon: /favicon.ico
+# SEO
+keywords: Computer Science, Technology Blog, Web Development, Ubuntu, Codility
 ## Social icon list: [facebook, twitter, weibo, wechat, github, stackoverflow, linkin, email, segmentfault, flickr, zhihu, disqus, douban, bilibili]
 social:
   - name: Github
@@ -22,12 +30,4 @@ social:
   - name: Email
     icon: email
     link: mailto:zhoujinhaixd@gmail.com
-# Disqus
-disqus:
-  enable: true
-  dsq_url: 'https://coding-note.disqus.com/embed.js'
-# Copyright
-copyright:
-  record: false
-  hexo: true
-  laughing: true
+# Footer
