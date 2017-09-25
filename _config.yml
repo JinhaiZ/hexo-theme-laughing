@@ -9,6 +9,8 @@ copyright:
 disqus:
   enable: true
   dsq_url: 'https://coding-note.disqus.com/embed.js'
+# Google Analytics
+google_analytics: UA-98330531-1
 # Header
 page_background: page_background.png
 page_menu_button: dark
