@@ -21,7 +21,7 @@ author:
   head: /codingnote_logo.png # the codingnote
   signature: A place where we share our ideas about codings.
 # Icon
-favicon: /favicon.ico
+favicon: /codingnote_logo_bw.svg
 # SEO
 keywords: Computer Science, Technology Blog, Web Development, Ubuntu, Codility
 ## Social icon list: [facebook, twitter, weibo, wechat, github, stackoverflow, linkin, email, segmentfault, flickr, zhihu, disqus, douban, bilibili]
