@@ -1135,6 +1135,11 @@ body.fixed .header-fixed .header-limiter nav {
   padding-right: .3em;
 }
 
+.article-creative-commons {
+  padding: 0 36px;
+  margin: 0 auto 0 auto;
+}
+
 .pagination {
   text-align: center;
   margin-bottom: 80px;
