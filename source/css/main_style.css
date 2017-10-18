@@ -547,6 +547,28 @@ pre .xml .cdata {
   opacity: 0.5;
 }
 
+.archive ul.post-archive {
+  list-style-type: none;
+  margin: 0;
+  padding: 0;
+}
+.archive ul.post-archive h2.archive-month {
+  font-size: 1.2rem;
+  border-bottom: 1px solid #ccc;
+}
+.archive ul.post-archive li.post-item {
+  font: 200 20px/1.5 Helvetica, Verdana, sans-serif;
+}
+.archive ul.post-archive li.post-item a.post-title {
+  font-size: 1rem;
+  margin: 10px 0;
+  color: #2c3e50;
+  transition: color .3s;
+}
+.archive ul.post-archive li.post-item a.post-title:hover {
+  color: #2980b9;
+}
+
 .article-comment {
   padding: 0 36px;
   margin: 0 auto 72px auto;
