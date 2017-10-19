@@ -547,6 +547,9 @@ pre .xml .cdata {
   opacity: 0.5;
 }
 
+.archive {
+  margin-bottom: 80px;
+}
 .archive ul.post-archive {
   list-style-type: none;
   margin: 0;
@@ -554,7 +557,7 @@ pre .xml .cdata {
 }
 .archive ul.post-archive h2.archive-month {
   font-size: 1.2rem;
-  border-bottom: 1px solid #ccc;
+  border-bottom: 1px solid #ecf0f1;
 }
 .archive ul.post-archive li.post-item {
   font: 200 20px/1.5 Helvetica, Verdana, sans-serif;

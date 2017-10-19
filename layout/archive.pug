@@ -7,7 +7,7 @@ block content
         ul.post-archive
             - var currentMonth = 0;
             - var change = false;
-            - page.posts.each(function (post) {
+            - site.posts.sort('date', -1).each(function (post) {
                 - var postMonth = date(post.date, 'YYYY-MM');
                 - change = currentMonth !== postMonth;
                 - month = change ? postMonth : currentMonth;
@@ -17,4 +17,3 @@ block content
                 li.post-item
                     a(class="post-title" href=url_for(post.path)) #{post.title}
             - })
-  include ./_partial/pagination.pug
