@@ -78,7 +78,7 @@ page_menu_button: dark
 post_background: /default_images/post_background.jpg
 
 ## 文章菜单按钮风格
-page_menu_button: light
+post_menu_button: light
 
 ## 标题占位字：无标题类型文章的标题占位字
 title_plancehold: '随笔'
@@ -122,21 +122,21 @@ content_width: 600
 social:
   - name: GitHub
     icon: github
-    link: http://github.com/BoizZ
+    link: https://github.com/C0dingNote
 ```
 
-### 多说
+### Disqus
 
-多说是自由开启的，默认开启，如果不需要则在配置文件里面关闭即可。
+Disqus是自由开启的，默认开启，如果不需要则在配置文件里面关闭即可。
 
-需要注意的是，多说的`url`配置默认使用站点的配置。请更改站点配置中`url`为自己的域名。
+需要注意的是，如果开启Disqus，请更改站点配置中`dsq_url`为自己的域名。
 
 ``` yaml
-## enable：是否开启多说（true：开启，false：关闭）
-## siteName：多说账号种填写的网站名称
-duoshuo:
+## enable：是否开启Disqus（true：开启，false：关闭）
+## dsq_url：Disqus账号中关联的站点地址
+disqus:
   enable: true
-  siteName: ueibo
+  dsq_url: 'https://EXAMPLE.disqus.com/embed.js'
 ```
 
 ### 版权
@@ -163,7 +163,9 @@ Laughing主题使用`pug`作为模板引擎，在开发前请确保已经安装�
 npm install hexo-renderer-pug --save
 ```
 
-### 安装Grunt
+### 安装依赖工具
+
+#### 安装Grunt
 
 Laughing主题使用`sass`作为预编译样式语言，使用`grunt`监听文件变化并编译成css。当然，`sass`是基于`ruby`的，需要在电脑上安装`ruby`；
 
@@ -172,6 +174,14 @@ Laughing主题使用`sass`作为预编译样式语言，使用`grunt`监听文�
 ```
 npm install
 ```
+
+ #### 安装Ruby
+
+ `sudo apt-get install ruby-full`
+
+ #### 安装sass
+
+ `sudo gem install sass --no-user-install`
 
 ### 参考
 

@@ -12,24 +12,48 @@ html(lang="zh-cn")
     link(rel="stylesheet", href="/css/main_style.min.css")
     link(rel="icon", href=theme.favicon)
   body
-    input#navi(type="checkbox")
-    ul.main-navication
-      li
-        a(href='/')
-          span Home
-      if theme.navication && theme.navication.length
-        each item in theme.navication
-          li
-            a(href=item.link)
-              if item.type
-                i(class="icon icon"+item.type)
-              span #{item.name}
     .wrapper#wrap
       block content
       include ./footer.pug
     block script
+    script(src='https://ajax.googleapis.com/ajax/libs/jquery/2.1.1/jquery.min.js')
     script.
       var wrap = document.getElementById('wrap');
       window.onload = function () {
         wrap.className += ' done';
+      }
+      // jQuery on fixed Header
+      $(document).ready(function(){
+      var showHeaderAt = 150;
+      var win = $(window),
+      body = $('body');
+      // Show the fixed header only on larger screen devices
+      if(win.width() > 400){
+      // When we scroll more than 150px down, we set the
+      // "fixed" class on the body element.
+      win.on('scroll', function(e){
+      if(win.scrollTop() > showHeaderAt) {
+      body.addClass('fixed');
+      }
+      else {
+      body.removeClass('fixed');
+      }
+      });
+      }
+      });
+      // jQuery on select Header
+      $(document).ready(function() {
+        // get current URL path and assign 'active' class
+        var pathname = window.location.pathname;
+        $('#header-navbar > a[href="'+pathname+'"]').addClass('selected');
+      })
+      if('#{theme.google_analytics}') {
+        // Google Analytics
+        (function(i,s,o,g,r,a,m){i['GoogleAnalyticsObject']=r;i[r]=i[r]||function(){
+        (i[r].q=i[r].q||[]).push(arguments)},i[r].l=1*new Date();a=s.createElement(o),
+        m=s.getElementsByTagName(o)[0];a.async=1;a.src=g;m.parentNode.insertBefore(a,m)
+        })(window,document,'script','https://www.google-analytics.com/analytics.js','ga');
+        ga('create', '#{theme.google_analytics}', 'auto');
+        ga('send', 'pageview');
+        // End Google Analytics
       }
